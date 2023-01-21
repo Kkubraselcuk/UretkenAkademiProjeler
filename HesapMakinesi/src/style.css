@@ -1,0 +1,39 @@
+.container-title{
+    width: 196px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border: 2px solid rgb(54, 54, 54);
+    text-align: center;
+}
+.container{
+    width: 196px;
+    padding-left: 3px;
+    padding-top: 3px;
+    border: 2px solid rgb(191, 191, 191);
+}
+.input-number{
+    width: 150px;
+    border: 2px solid black;
+    height: 17px;
+}
+.btn-group{
+    margin-bottom: 3px;
+}
+.btn{
+    background-color: rgb(191, 191, 191);
+    height: 23px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: rgb(115, 115, 115);
+    color: white;
+}
+.btn-number{
+    width: 50px;
+}
+.btn-process{
+    width: 30px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/main.js"></script>
+    <title>Hesap Makinesi - Kübra SELÇUK</title>
+</head>
+<body>
+    <div class="container-title">
+        Hesap Makinesi
+    </div>
+    <div class="container">
+        <div class="btn-group">
+            <input type="text" class="input-number" id="input-number">
+            <button class="btn btn-process" onclick="resetNumber();">C</button>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn btn-number" id="btn-bir" onclick="addingNumbers(1);">1</button>
+            <button class="btn btn-number" id="btn-bir" onclick="addingNumbers(2);">2</button>
+            <button class="btn btn-number" id="btn-bir" onclick="addingNumbers(3);">3</button>
+            <button class="btn btn-process" onclick="addingOperator('/');">/</button>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn btn-number" id="btn-bir" onclick="addingNumbers(4);">4</button>
+            <button class="btn btn-number" id="btn-bir" onclick="addingNumbers(5);">5</button>
+            <button class="btn btn-number" id="btn-bir" onclick="addingNumbers(6);">6</button>
+            <button class="btn btn-process" onclick="addingOperator('-');">-</button>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn btn-number" id="btn-bir" onclick="addingNumbers(7);">7</button>
+            <button class="btn btn-number" id="btn-bir" onclick="addingNumbers(8);">8</button>
+            <button class="btn btn-number" id="btn-bir" onclick="addingNumbers(9);">9</button>
+            <button class="btn btn-process" onclick="addingOperator('+');">+</button>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn btn-number" onclick="addingOperator('.');">.</button>
+            <button class="btn btn-number" id="btn-bir" onclick="addingNumbers(0);">0</button>
+            <button class="btn btn-number" onclick="result();">=</button>
+            <button class="btn btn-process" onclick="addingOperator('*');">*</button>
+        </div>
+    </div>
+</body>
+</html>
