@@ -1,0 +1,21 @@
+.jumbotron{
+    padding: 25px;
+    margin: 0;
+}
+.aboutMeImg, .descriptionImage{
+    width: 100%;
+    text-align: center;
+}
+.aboutMeText{
+    text-align: center;
+}
+.descriptionImage img{
+    width: 100%;
+}
+.list-group{
+    width: 50%;
+}
+.descriptionText{
+    margin-top: 15px;
+    text-align: justify;
+}
