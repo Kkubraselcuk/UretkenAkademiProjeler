@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Not Defteri - Kübra SELÇUK</title>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-2">
+                <label for="personName">Not Defteri İsmi:</label>
+            </div>
+            <div class="col-3">
+                <input type="text" name="personName" id="personName">
+            </div>
+            <div class="col">
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" onChange="myNewFunction(this)">
+                    <option selected>Colors</option>
+                    <option value="1">primary</option>
+                    <option value="2">secondary</option>
+                    <option value="3">success</option>
+                    <option value="4">danger</option>
+                    <option value="5">warning</option>
+                    <option value="6">info</option>
+                </select>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Random Color</label>
+                </div>
+                <button class=" btn btn-info" onclick="addBlock()">Not Defteri Ekle</button>
+            </div>
+        </div>
+
+        <div class="row mt-4"  id="mainRow">
+            <div class="col-3 mr-3 mt-3 cols" id="listBlock1">
+                <div class="card text-white bg-warning mb-3">
+                    <div class="card-header"><h4>Person</h4></div>
+                    <button type="submit" onclick="addItem('list1')" class="btn btn-dark addButton mt-2 mr-5 ml-5">+</button>
+                    
+                    <div class="card-body">
+                        <ul id="list1">
+                            <li>New Item</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+    </div>
+</body>
+</html>
