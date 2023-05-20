@@ -26,14 +26,17 @@ export default class Home extends Component {
             <>
 
                 <div className="container">
+
                     <h1>Hava Nasıl</h1>
                     Şuan Sıcaklık: {this.state.celcius} derece<br/><br/>
                         <button type="button" className="btn btn-success btn-sm" onClick={()=>this.increaseDegree()}>Sıcaklık Arttır</button><br/><br/>
+
                         <div className='row'>
                             <div className='col'>
                                 <Degrees/>
                             </div>
                         </div>
+
                         <div className='row'>
                             <div className='col'>
                                 <Celcius celciusValue={this.state.celcius}/>
@@ -45,6 +48,7 @@ export default class Home extends Component {
                                 <Kelvin kelvinValue={this.state.kelvin}/>
                             </div>
                         </div>
+                        
                 </div>
             </>
         )
